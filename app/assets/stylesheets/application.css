@@ -1,15 +1,77 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+#bodyhomepage{
+    background-color: rgb(176,224,230);
+    text-align: center
+}
+#bodyshow{
+    background-color: rgb(176,224,230);
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+#image01{
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+}
+h2{
+    color: rgb(255,12,0);
+    text-align: center;
+    font-family: serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+.todolist{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.listeditems{
+    color: rgb(0,0,160);
+}
+.listli{
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    margin-right: 100px;
+}
+.listlicompleted{
+    text-decoration: line-through;
+}
+.checkbox{
+    text-align: justify;
+    padding-right: 2px;
+}
+ul{
+    background-color: white;
+    list-style: none;
+    position: inherit;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 3px;
+    text-align: justify;
+}
+.pomodoros{
+    color: rgb(255,12,0);
+    text-align: justify;
+    margin-left: 5px;
+    font-weight: bold;
+}
+#usertext{
+    text-align: center;
+    color: rgb(10,10,255)
+}
+#usernumb{
+    text-align: center;
+    color: rgb(255,12,0);
+    font-weight: bold;
+}
+#inputbutton{
+    text-align: center;
+    box-shadow: 2px 2px;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+}
