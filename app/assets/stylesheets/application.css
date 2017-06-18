@@ -32,7 +32,6 @@ h2{
     color: rgb(0,0,160);
 }
 .listli{
-    text-align: justify;
 }
 .listlicompleted{
     text-decoration: line-through;
