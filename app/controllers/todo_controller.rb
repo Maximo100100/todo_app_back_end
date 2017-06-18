@@ -18,4 +18,13 @@ class TodoController < ApplicationController
             @todo_pomodoro_estamate = 14
         end
     end
+    def new
+    end
+    def create
+        t = Todo.new
+        t.description = params['description']
+        t.pomodoro_estamate = params['pomodoro_estamate']
+        t.save
+        redirect_to "/todo/show/#{ t.id }"
+    end
 end

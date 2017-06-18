@@ -35,10 +35,17 @@
             <span class="pomodoros">2 pomordoros</span>
             </li>
         </ul>
-        <div id="funtionbuttons">
-        <input id="usertext" type="text" placeholder="Input new todo"/>
-        <input id="usernumb" type="number" placeholder="Input numbers of pomodoros"/>
-        <div><input id="inputbutton" type="button" value="Submit New Todo"/></div>
-        </div>
+        <!--<div id="funtionbuttons">-->
+        <!--<input id="usertext" type="text" placeholder="Input new todo"/>-->
+        <!--<input id="usernumb" type="number" placeholder="Input numbers of pomodoros"/>-->
+        <!--<div><input id="inputbutton" type="button" value="Submit New Todo"/></div>-->
+        <!--</div>-->
+        <h2>Add a new todo...</h2>
+
+<form id="funtionbuttons" action="/todo/create">
+  <input class="text-input" id="usertext" name="description" type="text" placeholder="Add a new todo...">
+  <input class="text-input" id="usernumb" name="pomodoro-estimate" type="number" placeholder="Pomodoro estimate...">
+  <input class="button" id="inputbutton" type="submit" value="Add todo">
+</form>
 </body>
 </html>
