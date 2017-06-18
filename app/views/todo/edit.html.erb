@@ -1,0 +1,14 @@
+<div class="card" >
+    <h2>Edit this too...</h2>
+    
+    <form id="funtionbuttons" action="../update/<%= @todo.id %>">
+      <input class="text-input" id="usertext" name="description" type="text" placeholder="Add a new todo..." value="<%= @todo.description %>">
+      <input class="text-input" id="usernumb" name="pomodoro-estimate" type="number" placeholder="Pomodoro estimate..." value="<%= @todo.pomodoro_estamate %>">
+      <input class="button" id="inputbutton" type="submit" value="Edit too">
+      <a href="/todo/index" class="sample-link">Go back</a>    
+    </form>
+</div>
+
+
+
+

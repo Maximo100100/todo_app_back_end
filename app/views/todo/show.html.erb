@@ -4,12 +4,12 @@
 <body id="bodyshow">
     
     <h2><%= @todo.description %></h2>
-    <span class="pomodoro-estamate"><%= @todo.pomodoro_estamate %> Pomodoros </span>
-    <h3>Todo #<%= params[:id]%></h3>
+    <!--<span class="pomodoro-estamate"><h4><%= @todo.pomodoro_estamate %></h4> Pomodoros </span>-->
+    <h4><%= @todo.pomodoro_estamate %></h4>
+    <!--<h3>Todo #<%= params[:id]%></h3>-->
 
     <input type="checkbox"/>
-    <h1><%= @todo.description %></h1>
-    <a>Edit</a>
+    <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
     <a>Delete</a>
     <a href="https://todo-app-back-end-maximo100100.c9users.io/todo/index"> Return </a>    
     

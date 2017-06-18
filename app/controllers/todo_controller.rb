@@ -27,4 +27,22 @@ class TodoController < ApplicationController
         t.save
         redirect_to "/todo/show/#{ t.id }"
     end
+    def edit 
+        @todo = Todo.find_by_id(params[:id])
+    end 
+    def update
+        t = Todo.find_by_id(params['id'])
+        t.description = params['description']
+        t.pomodoro_estamate = params['pomodoro_estamate']
+        t.save
+        redirect_to "/todo/show/#{t.id}"
+    end 
 end
+
+
+
+
+
+
+
+
