@@ -2,6 +2,7 @@ class TodoController < ApplicationController
     def index
     end
     def show
+        @todo = Todo.find_by_id (params[:id])
         todo_id = params[:id]
         # todo_id = '0'
             @todo_description = "Make 1 curriculum"
